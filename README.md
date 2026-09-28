@@ -1,48 +1,60 @@
-# High-Cloud-AirLines-portfolio
+# High Clouds Airline Analytics Project
 
 ## ✈️ Project Overview
-This project presents a comprehensive end-to-end data analysis of **High Clouds Airline**, processing a large-scale dataset consisting of over **1 million+ rows (10L+)**. The objective was to extract actionable business insights regarding passenger volume, flight operations, seat capacities, carrier performance, and route profitability using a multi-tool analytics stack (**SQL, Excel, Power BI, and Tableau**).
+This repository contains a comprehensive end-to-end data analytics solution for **High Clouds Airline**. Processing a massive, large-scale dataset exceeding **1 million+ records (10L+)**, this project extracts powerful business insights across passenger demand, flight volume, seat capacity, carrier performance, and route profitability. 
+
+The analysis is executed using a multi-tool professional stack: **SQL** for backend data extraction and management, **Microsoft Excel** for exploratory analysis and baseline reporting, **Tableau** for interactive visualization, and **Power BI** for a robust, multi-page business intelligence report.
 
 ---
 
-## 📊 Key Dashboard Metrics & Visualizations (Tableau Preview)
-Based on the dashboard snapshot, the analysis highlights the following key performance indicators (KPIs) and operational breakdowns:
-* **Total Passengers:** 187.02M
-* **Total Available Seats:** 243.53M
-* **Overall Load Factor %:** 76.80%
-* **Total Flights:** 2.80M
+## 📊 Key Global Metrics (KPIs)
+Across the analytical models, the dataset tracks core operational metrics:
+* **Total Flights:** ~3M[cite: 2]
+* **Total Passengers:** 187M[cite: 2]
+* **Available Seats:** 244M[cite: 2]
+* **Total Distance:** 82M[cite: 2]
+* **Overall Load Factor %:** ~77%[cite: 2]
 
-### Core Visualizations Included:
-1. **Load Factor by Month:** Tracking seasonal trends and performance across the year.
-2. **Carrier Performance:** Comparing passenger volumes and load factors across major airlines (e.g., Southwest Airlines, Delta Air Lines, US Airways, Continental Air, etc.).
-3. **Top Routes:** Identifying the busiest flight corridors by flight counts (e.g., Atlanta, GA ➔ Boston, MA; Washington, DC ➔ New York, NY).
-4. **Distance Group Level:** Analyzing flight distribution across distance brackets (ranging from 0-500 km up to 2500+ km).
-5. **Weekday vs. Weekend Analysis:** Comparing operational load factors between weekdays (76.73%) and weekends (76.96%).
+---
+
+## 🖥️ Power BI Multi-Page Report Structure
+The Power BI report (`HightCloud Dashboard_PowerBI.pbix`) is structured into distinct, dedicated analytical views:
+
+1. **Flight Dashboard:**
+   * **KPI Cards:** Total Flights (3M), Total Passengers (187M), Available Seats (244M), Total Distance (82M), and Load Factor (77%)[cite: 2].
+   * **Filters & Slicers:** Year (2008–2010), Quarter, Month Name, and Carrier Name[cite: 2].
+   * **Visualizations:** Top 10 Airlines by Flights, Top 5 Airlines Share (Donut Chart), Total Flights by Year trend line, and Flight distribution by Month[cite: 2].
+
+2. **Passenger & Load Factor Dashboard:**
+   * **Operational Focus:** Deep-dives into passenger distributions and seat utilization efficiency[cite: 3].
+   * **Visualizations:** Top 10 Carriers by Passenger count, Load Factor trends by Year and Month, Weekday vs. Weekend Load Factor comparisons, and Carrier-specific load factor breakdowns[cite: 3].
+
+3. **Route & Distance Dashboard:**
+   * **Geographic & Spatial Analytics:** Features granular location filters including Origin/Destination Country, State, and City[cite: 4].
+   * **Visualizations:** Top 10 Routes by Flights, Distance Group distributions, and itemized Origin-to-Destination flight logs[cite: 4].
+
+---
+
+## 📈 Tableau Dashboard Features
+* **Interactive Executive Summary:** Global KPI tiles tracking passages, available seats, load factors, and flight counts.
+* **Temporal & Behavioral Trends:** Month-by-month load factor tracking and weekday versus weekend operational metrics[cite: 1].
+* **Carrier & Route Breakdowns:** Detailed comparisons of major airline contributions and high-density route corridors[cite: 1].
 
 ---
 
 ## 🛠️ Tech Stack & Methodology
-
-* **SQL:** Used for data extraction, joining large tables, handling missing values, data cleaning, and writing complex aggregation queries to process the 1M+ records efficiently.
-* **Microsoft Excel:** Utilized for initial exploratory data analysis (EDA), data wrangling, pivot tables, and building an interactive baseline spreadsheet dashboard.
-* **Tableau:** Built the primary interactive executive dashboard showcasing global KPIs, filters by geography (Country, State, City), carrier metrics, route analysis, and temporal trends.
-* **Power BI:** Created a parallel business intelligence report utilizing DAX measures and data modeling to deliver deep-dive analytical slicing.
-
----
-
-## 🚀 Key Business Insights
-* **Capacity Optimization:** While overall seat capacity stands strong at ~243.5M, maintaining a ~76.8% load factor highlights opportunities to optimize underperforming routes.
-* **Top Traffic Corridors:** High-density routes between major metropolitan hubs drive the vast majority of flight frequencies.
-* **Carrier Dominance:** A few major carriers capture the largest share of passenger volumes, indicating heavy market concentration.
-* **Temporal Stability:** Passenger demand and load factors remain relatively consistent between weekdays and weekends, showing steady operational flow.
+* **SQL:** Backend data wrangling, cleaning, and complex aggregation of 1M+ rows.
+* **Microsoft Excel:** Initial data exploration, modeling, and pivot table dashboards.
+* **Tableau:** Visual storytelling via interactive dashboards (`.twbx`)[cite: 1].
+* **Power BI:** Advanced multi-page business intelligence modeling, DAX calculations, and cross-filtering (`.pbix`).
 
 ---
 
 ## 📂 Repository Structure
 ```text
-├── Data/                 # Raw and cleaned datasets (Excel / CSV)
+├── Data/                 # Cleaned and processed dataset files (Excel / CSV)
 ├── SQL_Queries/          # SQL scripts used for data extraction and transformation
-├── Excel_Dashboard/      # Excel workbook containing pivot tables and summary models
-├── Tableau_Workbook/     # Tableau packaged workbook (.twbx)
-├── PowerBI_Report/       # Power BI desktop report (.pbix)
+├── Excel_Dashboard/      # Excel workbook containing pivot summaries and models
+├── Tableau_Workbook/     # Tableau interactive workbook (.twbx)
+├── PowerBI_Report/       # Power BI multi-page report (.pbix)
 └── README.md             # Project documentation
